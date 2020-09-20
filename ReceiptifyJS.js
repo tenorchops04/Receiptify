@@ -1,3 +1,17 @@
+function getInput() {
+	var itemName, itemPrice;
+	
+	itemName = prompt("Please enter the item's name: ");
+	
+	if(itemName != null){
+		itemPrice = prompt("Pleaser enter the item's price: ");
+	}
+
+	if(itemName != null && itemPrice != null){
+		document.getElementById("demo").innerHTML = "Item: " + itemName + " Price: " + itemPrice;
+	}
+}
+
 function openAccount(evt, accountName) {
   // Declare all variables
   var i, tabcontent, tablinks;
